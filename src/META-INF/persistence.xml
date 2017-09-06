@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="2.1" xmlns="http://xmlns.jcp.org/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence http://xmlns.jcp.org/xml/ns/persistence/persistence_2_1.xsd">
+	<persistence-unit name="SalesIncentiveManagementBatch" transaction-type="RESOURCE_LOCAL">
+    <provider>org.eclipse.persistence.jpa.PersistenceProvider</provider>
+    <class>ytc.com.dal.modal.DalCustomer</class>
+    <class>ytc.com.dal.modal.DalEmployee</class>
+    <class>ytc.com.dal.modal.DalEmployeeHierarchy</class>
+    <class>ytc.com.dal.modal.DalPricingHeader</class>
+    <class>ytc.com.dal.modal.DalProgramDetail</class>
+    <class>ytc.com.dal.modal.DalProgramHeader</class>
+    <class>ytc.com.dal.modal.DalProgramMaster</class>
+    <class>ytc.com.dal.modal.DalProgramType</class>
+    <class>ytc.com.dal.modal.DalSimEmployeeHierarchy</class>
+    <class>ytc.com.dal.modal.DalSimWorkflowMatrix</class>
+    <class>ytc.com.dal.modal.DalStatus</class>
+    <class>ytc.com.dal.modal.DalWorkflowExceptionMatrix</class>
+    <class>ytc.com.dal.modal.DalWorkflowMatrix</class>
+    <class>ytc.com.dal.modal.DalWorkflowStatus</class>
+    
+    <properties>
+        <property name="javax.persistence.jdbc.driver" value="com.mysql.jdbc.Driver"/>
+        <property name="javax.persistence.jdbc.url" value="jdbc:mysql://localhost:3306"/>
+        <property name="javax.persistence.jdbc.user" value="simdev"/>
+        <property name="javax.persistence.jdbc.password" value="simdevpwd"/>
+    </properties>
+  </persistence-unit>
+</persistence>
